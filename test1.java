@@ -1,22 +1,22 @@
-import java.util.Scanner;
+п»їimport java.util.Scanner;
 
 class test1 {
 	public static void main(String[] args) {
-		System.out.println("Введите положительное число: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ: ");
 		Scanner scanner = new Scanner(System.in);
 		int max = scanner.nextInt();
     		if (max > 0) { 
-    			System.out.println("От 1 до " + max + " имеются следующие простые числа: ");
+    			System.out.println("РћС‚ 1 РґРѕ " + max + " РёРјРµСЋС‚СЃСЏ СЃР»РµРґСѓСЋС‰РёРµ РїСЂРѕСЃС‚С‹Рµ С‡РёСЃР»Р°: ");
     			for (int i=2;i<max;i++){
         			if(checkSimple(i))
             				System.out.println(i);
    	 		}				
 		}
     		else 
-    		System.out.println("Вы ввели отрицательное число");
+    		System.out.println("Р’С‹ РІРІРµР»Рё РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ");
 	}
 
-/*так называемый 6k-1 алгоритм вычисления простых чисел*/
+/*С‚Р°Рє РЅР°Р·С‹РІР°РµРјС‹Р№ 6k-1 Р°Р»РіРѕСЂРёС‚Рј РІС‹С‡РёСЃР»РµРЅРёСЏ РїСЂРѕСЃС‚С‹С… С‡РёСЃРµР»*/
  
 	public static boolean checkSimple(int i){
     		if (i<=1)

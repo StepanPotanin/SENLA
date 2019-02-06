@@ -1,13 +1,13 @@
-import java.util.Scanner;
+п»їimport java.util.Scanner;
 import java.util.Arrays;
  
 public class test4 {
  
     public static void main(String[] args) {
-	Scanner input = new Scanner(System.in); // Объявляем Scanner
+	Scanner input = new Scanner(System.in); // РћР±СЉСЏРІР»СЏРµРј Scanner
 	int array[] = new int[4];
 	int count = 0;
-	System.out.println ("Введите последовательно через Enter четыре логических значения ('1' - истина или '0' - ложь)");
+	System.out.println ("Р’РІРµРґРёС‚Рµ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ С‡РµСЂРµР· Enter С‡РµС‚С‹СЂРµ Р»РѕРіРёС‡РµСЃРєРёС… Р·РЅР°С‡РµРЅРёСЏ ('1' - РёСЃС‚РёРЅР° РёР»Рё '0' - Р»РѕР¶СЊ)");
 	for (int i = 0; i < 4; i++) {
         	array[i] = input.nextInt(); // 
     	}
@@ -16,7 +16,7 @@ public class test4 {
 		count++;
 		}
     	}
-	System.out.println ("Результат: "+ (count==2));
+	System.out.println ("Р РµР·СѓР»СЊС‚Р°С‚: "+ (count==2));
 	
 }
 }

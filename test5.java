@@ -1,17 +1,17 @@
-import java.util.Scanner;
+п»їimport java.util.Scanner;
  
 public class test5 {
  
     public static void main(String[] args) {
-	System.out.println("Введите слово для проверки на палиндромность");
+	System.out.println("Р’РІРµРґРёС‚Рµ СЃР»РѕРІРѕ РґР»СЏ РїСЂРѕРІРµСЂРєРё РЅР° РїР°Р»РёРЅРґСЂРѕРјРЅРѕСЃС‚СЊ");
 	Scanner in = new Scanner(System.in);
 	String Word = in.nextLine();
 	String droW = reverseByStringBuilder(Word);
-	System.out.println("Это слово наоборот: " + droW);
+	System.out.println("Р­С‚Рѕ СЃР»РѕРІРѕ РЅР°РѕР±РѕСЂРѕС‚: " + droW);
 		if (Word.equalsIgnoreCase(droW) == true){
-			System.out.println("Это слово является палиндромом");
+			System.out.println("Р­С‚Рѕ СЃР»РѕРІРѕ СЏРІР»СЏРµС‚СЃСЏ РїР°Р»РёРЅРґСЂРѕРјРѕРј");
 		}
-		else System.out.println("Это слово НЕ является палиндромом");
+		else System.out.println("Р­С‚Рѕ СЃР»РѕРІРѕ РќР• СЏРІР»СЏРµС‚СЃСЏ РїР°Р»РёРЅРґСЂРѕРјРѕРј");
     }
 
     public static String reverseByStringBuilder(String s) {
